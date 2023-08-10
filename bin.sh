@@ -15,8 +15,9 @@ alias txt="nano"
 # 获取局域网内的IP地址（awk：非常好用的列提取器）
 alias internalip="ifconfig en0 | grep inet | awk '{ print $2 }'"
 
+alias lsvpn="curl -s ipinfo.io | jq -r '.region, .country' | sed -E 'N; s/(.*)\n(.*)/终端IP所属地: \1\/\2/'"
 # 启动终端启动VPN
-alias vpn="export https_proxy=http://127.0.0.1:1087 http_proxy=http://127.0.0.1:1087 all_proxy=socks5://127.0.0.1:1080"
+alias vpn="export https_proxy=http://127.0.0.1:1087 http_proxy=http://127.0.0.1:1087 all_proxy=socks5://127.0.0.1:1080; lsvpn"
 
 alias git-repo-name="git config user.name"
 alias git-repo-email="git config user.email"
@@ -24,8 +25,8 @@ alias git-repo-email="git config user.email"
 # SSH
 alias sshcpid="ssh-copy-id"
 
-alias lsvpn="curl -s ipinfo.io | jq -r '.region, .country' | sed -E 'N; s/(.*)\n(.*)/终端IP所属地: \1\/\2/'"
 alias inetip="internalip | grep -o 'inet [0-9\.]*'"
+
 
 inetip
 lsvpn
