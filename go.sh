@@ -9,6 +9,10 @@ export PATH=$GOPATH/bin:$PATH
 
 export goapp="$GOPATH/bin"
 
-echo "🐳 ==> GO:"
+echo "🐳 ==> Go:"
 go version
 echo "GOPATH: $(go env GOPATH)"
+echo "GOARCH: $(go env GOARCH)"
+echo "GO111MODULE: $(go env GO111MODULE)"
+echo "GOPROXY: $(go env GOPROXY)"
+echo "GOPRIVATE: $(go env GOPRIVATE)"

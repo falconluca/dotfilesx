@@ -4,15 +4,13 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 
-# 初始化命令
-cal
-
-
 source ~/dotfiles/bin.sh
 source ~/dotfiles/ps1.sh
 source ~/dotfiles/node.sh
 source ~/dotfiles/go.sh
 source ~/dotfiles/python.sh
+source ~/dotfiles/java.sh
+source ~/dotfiles/app.sh
 
 
 # 系统环境变量
