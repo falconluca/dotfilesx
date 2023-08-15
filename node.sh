@@ -28,6 +28,6 @@ alias reactapp="npx create-react-app"
 
 # 输出当前Node的版本号
 echo "☘️  ==> Node:"
-nvm use stable
+nvm use stable | awk '{printf "%s %s %s %s\n", $3, $4, $5, $6}'
 echo -e "NPM REGISTRY: $(npmreg)"
 

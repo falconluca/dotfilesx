@@ -27,6 +27,9 @@ alias sshcpid="ssh-copy-id"
 
 alias inetip="internalip | grep -o 'inet [0-9\.]*'"
 
+# Process
+alias top="htop"
+
 
 inetip
 lsvpn

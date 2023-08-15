@@ -10,7 +10,7 @@ export PATH=$GOPATH/bin:$PATH
 export goapp="$GOPATH/bin"
 
 echo "🐳 ==> Go:"
-go version
+go version | awk '{print $3}'
 echo "GOPATH: $(go env GOPATH)"
 echo "GOARCH: $(go env GOARCH)"
 echo "GO111MODULE: $(go env GO111MODULE)"
