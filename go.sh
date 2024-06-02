@@ -9,7 +9,7 @@ export PATH=$GOPATH/bin:$PATH
 
 export goapp="$GOPATH/bin"
 
-echo "\n🐳 ==> Go:"
+echo -e "\n🐳 ==> Go:"
 go version | awk '{print $3}'
 echo "GOPATH: $(go env GOPATH)"
 echo "GOARCH: $(go env GOARCH)"

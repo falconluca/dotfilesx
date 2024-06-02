@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo -e "\n🐢 ==> Shell: $SHELL"
+
 alias vi="nvim"
 alias vim="nvim"
 alias ll="ls -lh"
