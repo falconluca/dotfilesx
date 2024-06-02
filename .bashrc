@@ -3,7 +3,6 @@
 alias vi="nvim"
 alias vim="nvim"
 alias ll="ls -lh"
-alias devfarm="sshpass -p cdsalgo12345 ssh cds@192.168.54.11"
 
 #say "卧槽"
 
